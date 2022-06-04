@@ -243,7 +243,7 @@ void DGUSDisplay::WritePGM(const char str[], uint8_t len) {
 }
 
 void DGUSDisplay::loop() {
-  // Protect against recursion. ProcessRx() may indirectly call idle() when injecting G-code commands.
+  // protect against recursion… ProcessRx() may indirectly call idle() when injecting gcode commands.
   if (!no_reentrance) {
     no_reentrance = true;
     ProcessRx();

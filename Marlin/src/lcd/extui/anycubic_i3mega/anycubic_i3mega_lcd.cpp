@@ -85,7 +85,7 @@ void AnycubicTFTClass::OnSetup() {
   SENDLINE_DBG_PGM("J17", "TFT Serial Debug: Main board reset... J17"); // J17 Main board reset
   delay_ms(10);
 
-  // Init the state of the key pins running on the TFT
+  // initialise the state of the key pins running on the tft
   #if ENABLED(SDSUPPORT) && PIN_EXISTS(SD_DETECT)
     SET_INPUT_PULLUP(SD_DETECT_PIN);
   #endif

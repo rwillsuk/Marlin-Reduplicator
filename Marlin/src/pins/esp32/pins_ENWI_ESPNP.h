@@ -35,11 +35,9 @@
 // I2S (steppers & other output-only pins)
 //
 #define I2S_STEPPER_STREAM
-#if ENABLED(I2S_STEPPER_STREAM)
-  #define I2S_WS                              17
-  #define I2S_BCK                             22
-  #define I2S_DATA                            21
-#endif
+#define I2S_WS                                17
+#define I2S_BCK                               22
+#define I2S_DATA                              21
 
 //
 // Servos

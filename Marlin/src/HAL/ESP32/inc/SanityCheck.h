@@ -48,7 +48,3 @@
 #if USING_PULLDOWNS
   #error "PULLDOWN pin mode is not available on ESP32 boards."
 #endif
-
-#if BOTH(I2S_STEPPER_STREAM, LIN_ADVANCE)
-  #error "I2S stream is currently incompatible with LIN_ADVANCE."
-#endif

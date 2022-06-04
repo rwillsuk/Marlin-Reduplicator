@@ -1,6 +1,6 @@
 /**
  * Marlin 3D Printer Firmware
- * Copyright (c) 2022 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
+ * Copyright (c) 2020 MarlinFirmware [https://github.com/MarlinFirmware/Marlin]
  *
  * Based on Sprinter and grbl.
  * Copyright (c) 2011 Camiel Gubbels / Erik van der Zalm
@@ -21,6 +21,10 @@
  */
 #pragma once
 
-#define BOARD_INFO_NAME "BTT SKR V3 EZ"
+/**
+ * HAL Watchdog for Teensy 4.0 (IMXRT1062DVL6A) / 4.1 (IMXRT1062DVJ6A)
+ */
 
-#include "pins_BTT_SKR_V3_0_common.h"
+void watchdog_init();
+
+void HAL_watchdog_refresh();
